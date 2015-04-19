@@ -1,0 +1,7 @@
+<%= form_for(:cookie, url: cookie_monsters_path) do |f| %>
+  <%= f.label :key %>
+  <%= f.text_field :key %> <br>
+  <%= f.label :value %>
+  <%= f.text_field :value %> <br>
+  <%= f.submit "Create Cookie" %>
+<% end %>

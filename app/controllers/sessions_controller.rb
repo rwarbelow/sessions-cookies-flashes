@@ -7,18 +7,18 @@ class SessionsController < ApplicationController
   end
 
   def create
-    # cookies[cookie_data[:key]] = cookie_data[:value]
-    # redirect_to cookie_monsters_path
+    session[session_data[:key]] = session_data[:value]
+    redirect_to sessions_path
   end
 
   def destroy
-    # cookies.delete(params[:key])
-    # redirect_to cookie_monsters_path
+    sessions.delete(params[:key])
+    redirect_to sessions_path
   end
 
   private
 
   def session_data
-    params[:session]
+    params[:session_data]
   end
 end

@@ -1,0 +1,7 @@
+<%= form_for(:session_data, url: sessions_path) do |f| %>
+  <%= f.label :key %>
+  <%= f.text_field :key %> <br>
+  <%= f.label :value %>
+  <%= f.text_field :value %> <br>
+  <%= f.submit "Create Session" %>
+<% end %>
